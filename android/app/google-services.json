@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "726320730952",
+    "project_id": "bingostar-4b92c",
+    "storage_bucket": "bingostar-4b92c.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:726320730952:android:78b473cb7ea30f15bf997d",
+        "android_client_info": {
+          "package_name": "com.example.newbingostar"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9xUrrP_SN8pNYLXif5quXq20y-dqpzQY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

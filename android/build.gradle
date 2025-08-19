@@ -1,0 +1,31 @@
+buildscript {
+    dependencies {
+        classpath 'com.google.gms:google-services:4.4.2' // ✅ Firebase plugin
+    }
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+rootProject.buildDir = '../build'
+
+subprojects {
+    project.buildDir = "${rootProject.buildDir}/${project.name}"
+}
+
+subprojects {
+    project.evaluationDependsOn(':app')
+}
+
+// ✅ FIXED clean task syntax for Groovy
+tasks.register("clean", Delete) {
+    delete rootProject.buildDir
+}
